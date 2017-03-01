@@ -1,0 +1,69 @@
+.primary-nav > a{ 
+    padding-right: 20px;
+}
+.secondary-nav > a{
+    padding-right: 20px;
+}
+
+/*SIDE NAV*/
+ul {
+    padding: 20px 20px 20px 20px;  
+    border: .5px solid gainsboro;
+    background-color: #ffffff;
+    max-width: 400px; 
+    margin: auto;
+    border-radius: 5px;
+    box-shadow: .5px .5px .5px rgba(0,0,0,0.1);
+}
+
+li {
+    padding-left: 20px;
+    line-height: 22px;
+}
+
+.refineSearch {
+    padding: 20px 20px 20px 20px;  
+    border: .5px solid gainsboro;
+    background-color: #ffffff;
+    max-width: 400px; 
+    margin: auto;
+    border-radius: 5px;
+    box-shadow: .5px .5px .5px rgba(0,0,0,0.1);
+}
+
+h3 {
+    font-size: 14px;
+}
+
+h4 {
+    font-size: 13px;
+}
+
+/*PRODUCT IMAGES*/
+.col-sm-6 > img {
+height: 50px;
+width: 100px;
+}
+.card > img { 
+    width: 100%;
+}
+.card {
+    max-width: 300px;
+    max-height: 300px;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.25);
+    background: #ffffff;
+    display: inline-block;
+    box-sizing: border-box;
+}
+.card > h5{
+    color: darkgray;
+}
+.card > p {
+    color: silver;
+}
+.card > h6 {
+    color: green;
+}

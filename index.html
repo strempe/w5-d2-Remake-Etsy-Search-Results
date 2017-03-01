@@ -1,0 +1,204 @@
+<!doctype html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="text/javascript" src="https://cdn.polyfill.io/v2/polyfill.min.js?features=es6,fetch,Array.prototype.includes"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/global.css" />
+</head>
+<body>
+    <header> 
+<!--PRIMARY NAV BAR-->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-6">
+                    <img src="img/etsyLogo.png" alt="Etsy"/>
+                    <a href="">search<i class="glyphicon glyphicon-search"></i></a>
+                </div>
+
+                <div class="col-sm-6 text-right primary-nav">
+                    <a href="">Sell on Etsy</a>
+                    <a href="">Register</a>
+                    <a href="">Sign in</a>
+                    <a href="">Cart</a>                  
+                </div>
+            </div>
+        </div>
+            <hr> 
+
+<!--SECONDARY NAV BAR-->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12 secondary-nav">  
+                    <a href="">Clothing &amp Accessories</a>
+                    <a href="">Jewelry</a>
+                    <a href="">Craft Supplies &amp Tools</a>
+                    <a href="">Wedding</a>
+                    <a href="">Entertainment</a>
+                    <a href="">Home &amp Living</a>
+                    <a href="">Kids &amp Baby</a>
+                    <a href="">Vintage</a>  
+                    <br/>   
+                    <hr>           
+                </div>
+            </div>
+        </div>
+       
+    </header>
+    <main>  
+<!--SIDE NAV CATAGORIES-->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-3">
+                    <h3>Show results for:</h3>
+                    <ul class="catigories list-unstyled">
+                        <li><a href="">All categories</a></li>
+                        <li><a href="">Toys &amp Games</a></li>
+                        <li><a href="">Art &amp Collectibles</a></li>
+                        <li><a href="">Craft Supplies &amp Tools</a></li>
+                        <li><a href="">Home &amp Living</a></li>
+                        <li><a href="">Paper &amp Party Supplies</a></li>
+                        <li><a href="">Books, Movies &amp Music</a></li>
+                        <li><a href="">Accessories</a></li>
+                        <li><a href="">Clothing</a></li> 
+                        <li><a href="">Electronics &amp Accessories</a></li>        
+                        <li><a href="">Jewelry</a></li>        
+                        <li><a href="">Weddings</a></li>        
+                        <li><a href="">Bags &amp Purses</a></li>  
+                    </ul>
+                    <br/>
+                    <div class="refineSearch">
+                        <h3>Refine your search</h3>
+<!--LOCATION -->
+                        <div class="loaction">
+                            <h4>Shop local</h4>
+                            <label>
+                                <input type="radio" name="anywhere" id="anywhere" value="anywhere">
+                                <a href>Anywhere</a>
+                            </label>
+                            <br/>
+                            <label>
+                                <input type="radio" name="us" id="us" value="us">
+                                <a href>United States</a>
+                            </label>
+                            <br/>
+                            <label>
+                                <input type="radio" name="choose" id="choose" value="choose">
+                                <a href>Choose a custom location</a>
+                            </label>
+                        </div>
+                        <hr/>
+<!--Item Type-->
+                        <div class="type">
+                            <h4>Item Type</h4>
+                            <label>
+                                <input type="radio" name="allItems" id="allItems" value="all">
+                                <a href>All items</a>
+                            </label>
+                            <br/>
+                            <label>
+                                <input type="radio" name="handmade" id="handmade" value="handmade">
+                                <a href>Handmade</a>
+                            </label>
+                            <br/>
+                            <label>
+                                <input type="radio" name="vintage" id="vintage" value="vintage">
+                                <a href>Vintage</a>
+                            </label>
+                        </div>
+                        <hr/>
+<!--PRICE-->
+                          <div class="price">
+                            <h4>Price ($)</h4>
+                            <label>
+                                <input type="radio" name="price" id="any" value="any">
+                                <a href>Any price</a>
+                            </label>
+                            <br/>
+                            <label>
+                                <input type="radio" name="price" id="under-$25" value="under-$25">
+                                <a href>Under $25</a>
+                            </label>
+                            <br/>
+                            <label>
+                                <input type="radio" name="price" id="25-50" value="25-50">
+                                <a href>$25 - $50</a>
+                            </label>
+                             <br/>
+                            <label>
+                                <input type="radio" name="price" id="50-100" value="50-100">
+                                <a href>$50 - $100</a>
+                            </label>
+                             <br/>
+                            <label>
+                                <input type="radio" name="price" id="over100" value="over100">
+                                <a href>Over $100</a>
+                            </label>
+                        </div>
+                        <hr/>
+<!--SELECT COLOR -->
+                        <h4>Filter by color</h4>
+                        <a class="btn btn-primary btn-lg" href="#" role="button"></a>
+                        <a class="btn btn-success btn-lg" href="#" role="button"></a>
+                        <a class="btn btn-info btn-lg" href="#" role="button"></a>
+                        <a class="btn btn-warning btn-lg" href="#" role="button"></a>
+                        <a class="btn btn-danger btn-lg" href="#" role="button"></a>
+                        <a class="btn btn-default btn-lg" href="#" role="button"></a>
+                        <hr/>
+
+<!--ORDERING OPTIONS-->
+                        <div class="ordering">
+                            <h4>Ordering options</h4>
+                            <label>
+                                <input type="checkbox" value="">
+                                Accepts Etsy gift cards
+                            </label>
+
+                            <label>
+                                <input type="checkbox" value="">
+                                Customizable
+                            </label>
+                        </div>
+                        <br/>
+                        <hr/>
+<!--SHIP TO-->
+                        <h4>Ship to</h4>
+                        <select class="ship-to">
+                            <option>Indianapolis</option>
+                            <option>Denver</option>
+                            <option>Chicago</option>
+                            <option>Knoxville</option>
+                            <option>Detroit</option>
+                        </select>
+                       <br/><br/>
+                </div>
+            </div>
+          
+<!--PRODUCT RESULTS-->
+                <div class="col-sm-9">
+                    <div class="row-product" id="results">
+                
+                        <div class="card col-sm-3">
+                            <img src="http://unsplash.it/400/300?random=700"/>
+                            <h5>Vintage Go Board Game From The 1950's</h5>
+                            <p>TinkerbellVintage</p>
+                            <h6>$17.92</h6>
+                        </div>   
+
+                    </div>    
+                </div>
+            </div>
+        </div>
+
+
+
+
+ 
+    </main>
+    <script src="js/global.js"></script>
+
+    
+</body>
+</html>
