@@ -1,46 +1,43 @@
-// // Declare your builder function
-// function createResultCard(item) {
-//   var card = document.createElement('div')
-//   card.classList.add('col-sm-4')
+var games = { };
+var searchButton = document.querySelector('#search');
 
-//   // your code here to build up the card
+getVintageBoardGames()
 
-//   // keep in mind you'll be nesting tags
+function getVintageBoardGames() {
 
-//   document.querySelector('#results').appendChild(card)
-// }
+    fetch('https://thinksaydo.com/tiyproxy.php?https://openapi.etsy.com/v2/listings/active?api_key=h9oq2yf3twf4ziejn10b717i&keywords=' + encodeURIComponent('board games') + '&includes=Images,Shop')
+        .then(response => response.json())
+        .then(data => {
+            games = data.results;
+            getResults(games);      
 
-// // Call your builder function, one at a time to make 12 search result cards, each with different data (image can be the same at this point if you want)
-// // Don't forget you can use a for() loop, or make an array of objects even and use a items.forEach() loop.
-// createResultCard({
-//   image: 'http://unsplash.it/400/300?random=700',
-//   title: 'Vintage Board Game Art Wall Home Decor',
-//   seller: 'franz66',
-//   price: 15.00
-// })
-createCard({
-    src: 'http://unsplash.it/400/300?random=700',
-    caption: 'Something'
-});
+            console.log(games);    
+            document.querySelector('.form-control').value
+        })      
+}
 
-createCard({
-    src: 'http://unsplash.it/400/300?random=700',
-    caption: 'Something'
-});
+searchButton.addEventListener('click');
 
-createCard({
-    src: 'http://unsplash.it/400/300?random=700',
-    caption: 'Something'
-});
-
-function createCard(image) {
-    var card = `<div class="card col-sm-3">
-    <img src="http://unsplash.it/400/300?random=700"/>
-    <h5>Vintage Go Board Game From The 1950's</h5>
-    <p>TinkerbellVintage</p>
-    <h6>$17.92</h6>
-    </div>`;
+function getResults(games) {
+    games.forEach(function(info){
+    var card = `<div class="card col-sm-4 col-md-3">
+                    <img src="${info.Images[0].url_170x135}"/>
+                    <h5 class="cardCaption">${info.title.slice(0, 50)}...</h5>
+            </div>
+            <div class="row">
+                    <h6 class="cardSeller col-sm-6">${info.Shop.shop_name}</h6>
+                    <h6 class="price col-sm-6">${info.price}</h6>
+            </div>`;
 
     document.querySelector('#results').innerHTML += card;
+
+    })  
 }
+
+
+
+
+
+
+
 

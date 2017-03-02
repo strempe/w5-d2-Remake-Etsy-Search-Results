@@ -11,11 +11,18 @@
 <body>
     <header> 
 <!--PRIMARY NAV BAR-->
-        <div class="container-fluid">
+        <div class="container">
             <div class="row">
-                <div class="col-sm-6">
-                    <img src="img/etsyLogo.png" alt="Etsy"/>
-                    <a href="">search<i class="glyphicon glyphicon-search"></i></a>
+                <div class="col-sm-1 text-center">
+                    <img src="etsyLogo.png" class="logo" alt="Etsy" />      
+                </div>
+                <div class="col-sm-4">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search for..." id="search">
+                        <span class="input-group-btn">
+                            <button class="btn btn-info" type="button" id="search">Search</button>
+                        </span>
+                    </div>
                 </div>
 
                 <div class="col-sm-6 text-right primary-nav">
@@ -29,16 +36,16 @@
             <hr> 
 
 <!--SECONDARY NAV BAR-->
-        <div class="container-fluid">
+        <div class="container">
             <div class="row">
                 <div class="col-sm-12 secondary-nav">  
-                    <a href="">Clothing &amp Accessories</a>
+                    <a href="">Clothing &amp; Accessories</a>
                     <a href="">Jewelry</a>
-                    <a href="">Craft Supplies &amp Tools</a>
+                    <a href="">Craft Supplies &amp; Tools</a>
                     <a href="">Wedding</a>
                     <a href="">Entertainment</a>
-                    <a href="">Home &amp Living</a>
-                    <a href="">Kids &amp Baby</a>
+                    <a href="">Home &amp; Living</a>
+                    <a href="">Kids &amp; Baby</a>
                     <a href="">Vintage</a>  
                     <br/>   
                     <hr>           
@@ -49,24 +56,24 @@
     </header>
     <main>  
 <!--SIDE NAV CATAGORIES-->
-        <div class="container-fluid">
+        <div class="container">
             <div class="row">
                 <div class="col-sm-3">
                     <h3>Show results for:</h3>
-                    <ul class="catigories list-unstyled">
+                    <ul class="catigories list-unstyled list-indented">
                         <li><a href="">All categories</a></li>
-                        <li><a href="">Toys &amp Games</a></li>
-                        <li><a href="">Art &amp Collectibles</a></li>
-                        <li><a href="">Craft Supplies &amp Tools</a></li>
-                        <li><a href="">Home &amp Living</a></li>
-                        <li><a href="">Paper &amp Party Supplies</a></li>
-                        <li><a href="">Books, Movies &amp Music</a></li>
+                        <li><a href="">Toys &amp; Games</a></li>
+                        <li><a href="">Art &amp; Collectibles</a></li>
+                        <li><a href="">Craft Supplies &amp; Tools</a></li>
+                        <li><a href="">Home &amp; Living</a></li>
+                        <li><a href="">Paper &amp; Party Supplies</a></li>
+                        <li><a href="">Books, Movies &amp; Music</a></li>
                         <li><a href="">Accessories</a></li>
                         <li><a href="">Clothing</a></li> 
-                        <li><a href="">Electronics &amp Accessories</a></li>        
+                        <li><a href="">Electronics &amp; Accessories</a></li>        
                         <li><a href="">Jewelry</a></li>        
                         <li><a href="">Weddings</a></li>        
-                        <li><a href="">Bags &amp Purses</a></li>  
+                        <li><a href="">Bags &amp; Purses</a></li>  
                     </ul>
                     <br/>
                     <div class="refineSearch">
@@ -110,7 +117,7 @@
                         </div>
                         <hr/>
 <!--PRICE-->
-                          <div class="price">
+                        <div class="price">
                             <h4>Price ($)</h4>
                             <label>
                                 <input type="radio" name="price" id="any" value="any">
@@ -184,14 +191,32 @@
                             <img src="http://unsplash.it/400/300?random=700"/>
                             <h5>Vintage Go Board Game From The 1950's</h5>
                             <p>TinkerbellVintage</p>
-                            <h6>$17.92</h6>
+                            <h6 class="pull-right">$17.92</h6>
                         </div>   
 
                     </div>    
                 </div>
+
+                <!--<div class="card col-sm-4 col-md-3" id="results">
+                    <img src="http://unsplash.it/400/300?random=700"/>
+                    <h5 class="cardCaption">Vintage Go Board Game From The 1950's.</h5>
+                </div>
+                <div class="row">
+                    <h6 class="cardSeller col-sm-6">inkerbellVintage</h6>
+                    <h6 class="price col-sm-6">$17.92</h6>
+                </div>-->
             </div>
         </div>
 
+        <!--<div class="row">
+            <div class="col-sm-4 col-md-3">
+                <div class="card">
+                    <img src = "http"
+                </div>
+
+            </div>
+        </div>-->
+<!--col sm and md-->
 
 
 
