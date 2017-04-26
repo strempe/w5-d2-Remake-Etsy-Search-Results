@@ -11,25 +11,26 @@
 <body>
     <header> 
 <!--PRIMARY NAV BAR-->
-        <div class="container">
+        <div class="container-fluid primary-nav-bar">
             <div class="row">
-                <div class="col-sm-1 text-center">
-                    <img src="etsyLogo.png" class="logo" alt="Etsy" />      
+                <div class="img col-sm-1 text-center">
+                    <img src="img/etsyLogo.png" class="logo" alt="Etsy" />      
                 </div>
                 <div class="col-sm-4">
                     <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Search for..." id="search">
+                        <input type="text" class="form-control" placeholder="Search for..." id="searchInput">
                         <span class="input-group-btn">
-                            <button class="btn btn-info" type="button" id="search">Search</button>
+                            <button class="btn btn-info" type="button" id="searchBtn">Search</button>
                         </span>
                     </div>
                 </div>
 
                 <div class="col-sm-6 text-right primary-nav">
-                    <a href="">Sell on Etsy</a>
-                    <a href="">Register</a>
-                    <a href="">Sign in</a>
-                    <a href="">Cart</a>                  
+                    <a class="primary-link" href="">Sell on Etsy</a>
+                    <a class="primary-link" href="">Register</a>
+                    <a class="primary-link" href="">Sign in</a>
+                    <a class="glyphicon glyphicon-shopping-cart"></a>
+                    <a class="primary-link" href="">Cart</a>                  
                 </div>
             </div>
         </div>
@@ -48,11 +49,10 @@
                     <a href="">Kids &amp; Baby</a>
                     <a href="">Vintage</a>  
                     <br/>   
-                    <hr>           
                 </div>
             </div>
         </div>
-       
+       <hr>   
     </header>
     <main>  
 <!--SIDE NAV CATAGORIES-->
@@ -184,8 +184,9 @@
             </div>
           
 <!--PRODUCT RESULTS-->
-                <div class="col-sm-9">
-                    <div class="row-product" id="results">
+                <div class="row itemCards"></div>
+                <!--<div class="col-sm-9">
+                    <div class="row product" id="results">
                 
                         <div class="card col-sm-3">
                             <img src="http://unsplash.it/400/300?random=700"/>
@@ -195,32 +196,9 @@
                         </div>   
 
                     </div>    
-                </div>
-
-                <!--<div class="card col-sm-4 col-md-3" id="results">
-                    <img src="http://unsplash.it/400/300?random=700"/>
-                    <h5 class="cardCaption">Vintage Go Board Game From The 1950's.</h5>
-                </div>
-                <div class="row">
-                    <h6 class="cardSeller col-sm-6">inkerbellVintage</h6>
-                    <h6 class="price col-sm-6">$17.92</h6>
                 </div>-->
             </div>
-        </div>
-
-        <!--<div class="row">
-            <div class="col-sm-4 col-md-3">
-                <div class="card">
-                    <img src = "http"
-                </div>
-
-            </div>
-        </div>-->
-<!--col sm and md-->
-
-
-
- 
+        </div> 
     </main>
     <script src="js/global.js"></script>
 

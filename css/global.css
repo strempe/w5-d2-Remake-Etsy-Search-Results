@@ -1,8 +1,22 @@
-.primary-nav > a{ 
+.primary-nav-bar {
+   margin-top: 20px;
+}
+/*.primary-nav > a{ 
+    padding-right: 20px;
+    margin-top: 40px;
+}*/
+
+.primary-link{
+    padding-right: 20px;
+    margin-top: 40px;
+} 
+.secondary-nav > a{
+    /*padding-top: 20px;*/
     padding-right: 20px;
 }
-.secondary-nav > a{
-    padding-right: 20px;
+
+.img > img {
+    width: 100%;
 }
 
 /*SIDE NAV*/
@@ -44,6 +58,9 @@ h4 {
 }
 
 /*PRODUCT IMAGES*/
+.row-product {
+    margin-top: 45px;
+}
 .col-sm-6 > img {
 height: 50px;
 width: 100px;
@@ -65,6 +82,7 @@ width: 100px;
 }
 .card > h5{
     color: darkgray;
+    line-height: 17px;
 }
 .card > p {
     color: silver;
